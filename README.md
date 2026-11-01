@@ -1,25 +1,39 @@
-# Benjamin — private online course
+# Benjamin — public online course
 
-Cloudflare Workers serves the course; D1 saves online attempts. The original Mac course and its learning database remain unchanged. Earlier Mac work has not been imported.
-
-Google sign-in protects every production request. No Cloudflare Zero Trust subscription or billing card is required. Only golfapan@gmail.com (teacher) and benjaminpanics@gmail.com (learner) are allowed. The Worker verifies Google token signatures, issuer, client audience, expiry, email verification and a single-use browser nonce. An HttpOnly secure cookie refers to a hashed, seven-day session in D1; client identity headers are ignored. Static files and exam PDFs also require authentication. Original exam answer PDFs require the teacher role. Preview URLs are disabled.
-
-## Deployment
-
-Set the D1 database ID in wrangler.jsonc. Apply schema.sql to the new benjamin-progress database. Set GOOGLE_CLIENT_ID to the web login client with the exact production origin. The server enforces the two-email allowlist before creating a session. Keep run_worker_first enabled. Deploy with npm install and npm run deploy. No private Mac database, credentials, logs, reference library or developer history belongs in this repository.
-
-## Validation
-
-Run npm test. Golden fixtures are generated from the original Python grading and summary implementation using synthetic, in-memory records. Tests cover corrections, help evidence, first-test sealing, SQL persistence, concurrent update rejection, ownership and access guards.
-
-build.py is a local snapshot preparation utility; it requires the original course directories and is not a Cloudflare build step. The deployed snapshot contains only the selected current course resources. Course material and solutions are bundled in the Worker, outside the static directory.
-
-Deployment status is recorded in the local cloud_plan.json. Repository creation alone does not mean hosting or email login is live.
-
-## Current rollout
+Latest decision, 2 November 2026: open the course directly without passwords,
+Google sign-in, approved emails or a Cloudflare Access gate.
 
 Course URL: https://benjamin-science.golfapan.workers.dev
 
-The private Worker and D1 schema are deployed. Google user-data policy consent, the exact production JavaScript origin and the two approved Google test users are configured. No credit card was bound and Cloudflare Zero Trust checkout was cancelled. A sign-out control is available for switching accounts.
+Cloudflare Workers serves the course; D1 saves attempts. A random, secure,
+HttpOnly browser cookie separates each visitor's saved work. There is no account
+or login step. Use the same browser to resume; different devices/browsers have
+separate progress. Clearing the browser cookie can disconnect saved attempts.
+The public Progress page shows only that browser's own attempts. Older Google-
+owned family records stay separate and are not exposed or imported; the Mac's
+private learning database remains unchanged and was not uploaded.
 
-Live sign-in verification is incomplete: Google Identity Services currently reports that the origin is not allowed, despite the saved origin matching the course URL. Google documents a propagation interval of five minutes to several hours for client changes (https://support.google.com/cloud/answer/15549257). Propagation is a possible cause, not yet confirmed. Anonymous course/API access remains blocked. Do not treat the course as ready for learner use until an approved Google login and live progress round-trip have passed. Earlier Mac records remain separate and have not been imported.
+Question entry, marking, corrections, first-pass evidence and prepared solutions
+continue to work. Existing independent first-test rules remain. Original teacher
+exam answer PDFs and developer files are not public downloads. Public visitors
+cannot impersonate teachers by supplying an email header.
+
+## Build and verification
+
+Run `node tests.mjs` and `node public.test.mjs`. The original 2076 Python grading
+fixtures and 102 summary fixtures remain; synthetic SQL tests verify public
+entry, marking, persistence, own-history access and separation from older private
+records. No live student data is used by the local tests.
+
+Deploy the selected cloud package to the existing benjamin-science Worker using
+the existing GitHub/Cloudflare build integration. No new site, port, subscription
+or paid service is required. `wrangler.jsonc` declares the existing D1 binding.
+Google credentials and allowlists are no longer used by the Worker; historical
+Google auth code is inactive and is not served as a static asset.
+
+`build.py` prepares the selected snapshot from the portable local course. Do not
+upload the private Mac database, credentials, logs, reference library or developer
+history. The source repository can remain private while the website is public.
+
+Public version prepared and locally verified; live deployment verification is
+recorded in the local cloud_plan.json, not inferred from a source commit alone.

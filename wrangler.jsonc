@@ -9,11 +9,7 @@
     "binding": "ASSETS",
     "run_worker_first": true
   },
-  "vars": {
-    "ALLOWED_EMAILS": "golfapan@gmail.com,benjaminpanics@gmail.com",
-    "TEACHER_EMAIL": "golfapan@gmail.com",
-    "GOOGLE_CLIENT_ID": "768954863007-jl6f4siftfno50v7ol5kdlifeerr1m0j.apps.googleusercontent.com"
-  },
+  "vars": {"ACCESS_MODE": "public"},
   "d1_databases": [
     {
       "binding": "DB",

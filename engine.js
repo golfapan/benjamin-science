@@ -82,7 +82,7 @@ export function service(course,store){
    const s={id:crypto.randomUUID(),owner:email,student_name:teacher?'Teacher preview':'Benjamin',topic_id:topic.id,active_level:level,page_id:page.id,started_at:now,updated_at:now,rounds:{},help:[],attempts:{}};await store.insert(s);return{session_id:s.id,active_level:level,page_id:page.id};
   }
   if(path==='/api/map-progress'||path==='/api/instructor/summary'){
-   if(path.includes('instructor')&&!teacher)reject(403,'Teacher access required.');
+   if(path.includes('instructor')&&!teacher&&identity.mode!=='public')reject(403,'Teacher access required.');
    const records=(await store.list(teacher?null:email)).map(x=>x.state);
    if(path.includes('instructor'))return{sessions:records.slice(0,100).map(s=>{const{page}=questionsFor(course,s);return{session_id:s.id,student_name:s.student_name,topic_id:s.topic_id,active_level:s.active_level,page_id:page?.id,page_title:page?.title||'Legacy course page',updated_at:s.updated_at,active_summary:summary(course,s),levels:Object.fromEntries(LEVELS.map(l=>[l,summary(course,s,l)]))};})};
    const pages={};for(const t of course.topics)for(const l of LEVELS)for(const p of t.course_pages?.[l]||[]){

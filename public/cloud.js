@@ -1,5 +1,10 @@
-// Cloud-specific presentation only; permissions are enforced by the Worker.
-fetch('/api/me').then(r=>{if(!r.ok)throw Error('Sign-in required');return r.json();}).then(me=>{
- document.querySelectorAll('[data-view="instructor"]').forEach(b=>{b.hidden=me.role!=='teacher';});
- const p=document.getElementById('copy-status');if(p){p.textContent='Signed in as '+me.email+'. ';const exit=document.createElement('button');exit.type='button';exit.textContent='Sign out';exit.addEventListener('click',async()=>{exit.disabled=true;try{const response=await fetch('/auth/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});if(!response.ok)throw Error('Sign out failed');localStorage.removeItem('benScienceSessionId');location.replace('/login');}catch{exit.disabled=false;exit.textContent='Retry sign out';}});p.append(exit);}
-}).catch(()=>{const p=document.getElementById('copy-status');if(p)p.textContent='Please sign in with your approved email.';});
+// Public course: no accounts. Saved work belongs to this browser.
+if(!localStorage.getItem('benPublicCourseV1')){
+ localStorage.removeItem('benScienceSessionId');
+ localStorage.removeItem('benSciencePageStartedAt');
+ localStorage.setItem('benPublicCourseV1','1');
+}
+const status=document.getElementById('copy-status');
+if(status)status.textContent='No sign-in needed. Progress is saved for this browser.';
+const footer=document.querySelector('body > footer');
+if(footer)footer.textContent='Public online course. Your attempts are saved for this browser. Earlier Mac records remain separate.';

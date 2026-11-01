@@ -1,10 +1,10 @@
 {
-  "name": "benjamin-private-course",
+  "name": "benjamin-course",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "node tests.mjs && node auth.test.mjs",
+    "test": "node tests.mjs && node public.test.mjs",
     "deploy": "wrangler deploy",
     "build": "node --check worker.js && node --check engine.js && node --check auth.js"
   },

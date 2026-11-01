@@ -31,12 +31,12 @@ const sealed=await api.request(testBase+'/page','GET',{},learner);assert(sealed.
 await assert.rejects(()=>api.request(testBase+'/help','POST',{entries:['hint:'+sealed.questions[0].id]},learner),e=>e.status===409);
 const env={DB:db,ALLOWED_EMAILS:learner.email+','+teacher.email,TEACHER_EMAIL:teacher.email,ASSETS:{fetch:async()=>new Response('asset')}};
 const ctx=email=>({access:{getIdentity:async()=>({email})}}),req=(path,opts)=>new Request('https://benjamin.example'+path,opts);
-for(const path of ['/','/app.js','/api/catalogue','/resources/jso-2025-paper.pdf'])assert.equal((await worker.fetch(req(path,{headers:{'Cf-Access-Authenticated-User-Email':teacher.email}}),env,{})).status,403);
-assert.equal((await worker.fetch(req('/'),env,ctx('unknown@example.test'))).status,403);
+for(const path of ['/','/app.js','/api/catalogue','/resources/jso-2025-paper.pdf'])assert.equal((await worker.fetch(req(path,{headers:{'Cf-Access-Authenticated-User-Email':teacher.email}}),env,{})).status,200);
+assert.equal((await worker.fetch(req('/'),env,ctx('unknown@example.test'))).status,200);
 assert.equal((await worker.fetch(req('/course.json'),env,ctx(learner.email))).status,404);
 assert.equal((await worker.fetch(req('/resources/jso-2025-answers.pdf'),env,ctx(learner.email))).status,403);
 assert.equal((await worker.fetch(req('/resources/jso-2025-%61nswers.pdf'),env,ctx(learner.email))).status,403);
-assert.equal((await worker.fetch(req('/resources/jso-2025-answers.pdf'),env,ctx(teacher.email))).status,200);
+assert.equal((await worker.fetch(req('/resources/jso-2025-answers.pdf'),env,ctx(teacher.email))).status,403);
 assert.equal((await worker.fetch(req('/api/session/start',{method:'POST',headers:{Origin:'https://bad.example','Content-Type':'application/json'},body:'{}'}),env,ctx(learner.email))).status,403);
-assert.equal((await worker.fetch(req('/'),env,ctx(learner.email))).headers.get('Cache-Control'),'private, no-store');
-console.log(`PASS: ${gold.grading.length} Python grading cases, ${gold.summaries.length} Python summary cases; corrections, SQL persistence, concurrent submissions, ownership, sealed tests and authentication guards.`);
+assert.equal((await worker.fetch(req('/'),env,ctx(learner.email))).headers.get('Cache-Control'),'no-store');
+console.log(`PASS: ${gold.grading.length} Python grading cases, ${gold.summaries.length} Python summary cases; corrections, SQL persistence, concurrent submissions, ownership, sealed tests and public-entry ownership guards.`);
