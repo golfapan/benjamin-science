@@ -15,3 +15,7 @@ Run npm test. Golden fixtures are generated from the original Python grading and
 build.py is a local snapshot preparation utility; it requires the original course directories and is not a Cloudflare build step. The deployed snapshot contains only the selected current course resources. Course material and solutions are bundled in the Worker, outside the static directory.
 
 Deployment status is recorded in the local cloud_plan.json. Repository creation alone does not mean hosting or email login is live.
+
+## Current rollout
+
+Worker deployment is configured at https://benjamin-science.golfapan.workers.dev. Anonymous requests are blocked. Google login setup is pending user acceptance of Google’s API user-data policy and creation of the web login client. The course is not yet ready for learner use. Cloudflare Zero Trust checkout was cancelled; no credit card was bound. The two approved Gmail addresses remain the only permitted users.
