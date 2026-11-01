@@ -1,10 +1,24 @@
 {
- "name":"benjamin-science",
- "main":"worker.js",
- "compatibility_date":"2026-10-31",
- "workers_dev":true,
- "preview_urls":false,
- "assets":{"directory":"public","binding":"ASSETS","run_worker_first":true},
- "vars":{"ALLOWED_EMAILS":"golfapan@gmail.com,benjaminpanics@gmail.com","TEACHER_EMAIL":"golfapan@gmail.com"},
- "d1_databases":[{"binding":"DB","database_name":"benjamin-progress","database_id":"f5c01580-de33-4a96-8e39-c462089f2368"}]
+  "name": "benjamin-science",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-31",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "ALLOWED_EMAILS": "golfapan@gmail.com,benjaminpanics@gmail.com",
+    "TEACHER_EMAIL": "golfapan@gmail.com",
+    "GOOGLE_CLIENT_ID": "768954863007-jl6f4siftfno50v7ol5kdlifeerr1m0j.apps.googleusercontent.com"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "benjamin-progress",
+      "database_id": "f5c01580-de33-4a96-8e39-c462089f2368"
+    }
+  ]
 }
