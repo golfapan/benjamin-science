@@ -4,7 +4,7 @@ import {service,D1Store,APIError} from './engine.js';
 
 function json(data,status=200){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'}});}
 export async function authenticatedIdentity(env,ctx,request){
- // Only use identity attested by the Access-protected Worker invocation.
+ // Verify the Google session, or use server-attested Access identity when configured.
  // Client-supplied email and Cf-Access-* headers are never identity evidence.
  const identity=env.GOOGLE_CLIENT_ID?await sessionIdentity(request,env):(ctx.access?await ctx.access.getIdentity():null),email=String(identity?.email||'').toLowerCase();
  const allowed=String(env.ALLOWED_EMAILS||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
@@ -17,7 +17,7 @@ export default{
    const auth=await authRoute(request,env);if(auth)return auth;
    const identity=await authenticatedIdentity(env,ctx,request);
    if(!identity){if(env.GOOGLE_CLIENT_ID&&request.method==='GET'&&!new URL(request.url).pathname.startsWith('/api/'))return new Response(null,{status:303,headers:{Location:'/login','Cache-Control':'no-store'}});return json({error:'Sign in with an approved family email to access Benjamin.'},403);}
-   const url=new URL(request.url),path=url.pathname;
+   const url=new URL(request.url),path=decodeURIComponent(url.pathname);
    if(!['GET','HEAD','POST'].includes(request.method))return json({error:'Method not allowed'},405);
    if(request.method==='POST'){
     if(request.headers.get('Origin')!==url.origin||request.headers.get('Sec-Fetch-Site')==='cross-site')return json({error:'Same-site submission required'},403);
@@ -30,6 +30,7 @@ export default{
     const result=await service(course,new D1Store(env.DB)).request(path,request.method==='HEAD'?'GET':request.method,payload,identity);
     return request.method==='HEAD'?new Response(null,{status:200,headers:{'Cache-Control':'no-store'}}):json(result,path==='/api/session/start'||path.endsWith('/page-submit')||path.endsWith('/answer')?201:200);
    }
+   if(path.startsWith('/resources/')&&!/^\/resources\/jso-202[45]-(paper|answers)\.pdf$/.test(path))return json({error:'Not found'},404);
    if(path.startsWith('/resources/')&&path.includes('answers')&&identity.role!=='teacher')return json({error:'Teacher access required'},403);
    // The static directory deliberately contains neither course.json nor answer keys.
    if(/(?:^|\/)(?:course\.json|engine\.js|worker\.js|schema\.sql|source\.json|\.env|\.git)(?:\/|$)/i.test(path))return json({error:'Not found'},404);

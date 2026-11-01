@@ -25,6 +25,8 @@ const a=await store.get(state.id),b=await store.get(state.id);await store.save(a
 assert.equal((await new D1Store(db).get(state.id)).state.rounds.medium.length,2);
 const testFixture=gold.summaries.find(x=>x.level==='test').state;
 const test=await api.request('/api/session/start','POST',{topic_id:testFixture.topic_id,page_id:testFixture.page_id,level:'test'},learner),testBase=`/api/session/${test.session_id}`;
+const legacySealed=await api.request(testBase+'/next','GET',{},learner);assert(!('hint'in legacySealed.question)&&!('worked_solution'in legacySealed.question));
+await assert.rejects(()=>api.request(testBase+'/answer','POST',{question_id:legacySealed.question.id,answer:'x'},learner),e=>e.status===409);
 const sealed=await api.request(testBase+'/page','GET',{},learner);assert(sealed.questions.every(q=>!('hint'in q)&&!('worked_solution'in q)));
 await assert.rejects(()=>api.request(testBase+'/help','POST',{entries:['hint:'+sealed.questions[0].id]},learner),e=>e.status===409);
 const env={DB:db,ALLOWED_EMAILS:learner.email+','+teacher.email,TEACHER_EMAIL:teacher.email,ASSETS:{fetch:async()=>new Response('asset')}};
@@ -33,6 +35,7 @@ for(const path of ['/','/app.js','/api/catalogue','/resources/jso-2025-paper.pdf
 assert.equal((await worker.fetch(req('/'),env,ctx('unknown@example.test'))).status,403);
 assert.equal((await worker.fetch(req('/course.json'),env,ctx(learner.email))).status,404);
 assert.equal((await worker.fetch(req('/resources/jso-2025-answers.pdf'),env,ctx(learner.email))).status,403);
+assert.equal((await worker.fetch(req('/resources/jso-2025-%61nswers.pdf'),env,ctx(learner.email))).status,403);
 assert.equal((await worker.fetch(req('/resources/jso-2025-answers.pdf'),env,ctx(teacher.email))).status,200);
 assert.equal((await worker.fetch(req('/api/session/start',{method:'POST',headers:{Origin:'https://bad.example','Content-Type':'application/json'},body:'{}'}),env,ctx(learner.email))).status,403);
 assert.equal((await worker.fetch(req('/'),env,ctx(learner.email))).headers.get('Cache-Control'),'private, no-store');
