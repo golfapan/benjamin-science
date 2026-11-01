@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="370" viewBox="0 0 780 370" role="img" aria-label="Heating curve with measured vertices">
+<rect width="780" height="370" fill="white"/><g font-family="Arial,sans-serif" font-size="20" fill="#173b46">
+<path d="M75 35V305H735" fill="none" stroke="#173b46" stroke-width="2"/>
+<text x="10" y="25">T (°C)</text><text x="660" y="350">Time (s)</text>
+<g stroke="#d4e0e3" stroke-width="1"><path d="M75 255H735M75 155H735M75 55H735M220 40V305M395 40V305M685 40V305"/></g>
+<g text-anchor="end"><text x="62" y="261">20</text><text x="62" y="161">60</text><text x="62" y="61">100</text></g>
+<g text-anchor="middle"><text x="75" y="330">0</text><text x="220" y="330">100</text><text x="395" y="330">220</text><text x="685" y="330">420</text></g>
+<polyline points="75,255 220,155 395,155 685,55" fill="none" stroke="#087b72" stroke-width="4"/>
+<g fill="#087b72"><circle cx="75" cy="255" r="5"/><circle cx="220" cy="155" r="5"/><circle cx="395" cy="155" r="5"/><circle cx="685" cy="55" r="5"/></g>
+<text x="95" y="75">0.500 kg sample</text><text x="95" y="102">100 W, negligible heat loss</text>
+</g></svg>

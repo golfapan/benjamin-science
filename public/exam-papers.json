@@ -1,0 +1,661 @@
+{
+  "revision": "2026-10-22-full-paper-r11",
+  "scope": "Local private practice using the retained 2024/2025 historical papers; not a current live exam or an automatic grading service.",
+  "source_check_date": "2026-10-22",
+  "record_storage": "Blank paper forms only; nothing is saved to Progress, browser storage or a learning database.",
+  "papers": [
+    {
+      "year": 2024,
+      "level": "Years 9–10",
+      "reading_minutes": 10,
+      "exam_minutes": 120,
+      "continuous_minutes": 130,
+      "question_count": 52,
+      "total_marks": 56,
+      "paper_url": "/resources/jso-2024-paper.pdf",
+      "answers_url": "/resources/jso-2024-answers.pdf",
+      "record_url": "/exam-record.html?year=2024",
+      "paper_file": "2024-Junior-Science-Olympiad-Exam-Years-9-10.pdf",
+      "answer_file": "2024-Junior-Science-Olympiad-Exam-Years-9-10-Answers.pdf",
+      "paper_sha256": "6eb4f30f4aceeca8bfb33d1dad6172896abd93db90ab9e8ab071b02685095e25",
+      "answer_sha256": "e20af74e4e366fed236d90944d73fae61d5fcbd0787b41869fde83731f88ab5a",
+      "paper_pages": 47,
+      "answer_pages": 49,
+      "questions": [
+        {
+          "number": 1,
+          "max_marks": 1.0,
+          "paper_pdf_page": 3,
+          "answer_pdf_page": 3
+        },
+        {
+          "number": 2,
+          "max_marks": 1.0,
+          "paper_pdf_page": 4,
+          "answer_pdf_page": 4
+        },
+        {
+          "number": 3,
+          "max_marks": 1.0,
+          "paper_pdf_page": 5,
+          "answer_pdf_page": 5
+        },
+        {
+          "number": 4,
+          "max_marks": 1.0,
+          "paper_pdf_page": 5,
+          "answer_pdf_page": 5
+        },
+        {
+          "number": 5,
+          "max_marks": 1.0,
+          "paper_pdf_page": 6,
+          "answer_pdf_page": 6
+        },
+        {
+          "number": 6,
+          "max_marks": 1.0,
+          "paper_pdf_page": 7,
+          "answer_pdf_page": 7
+        },
+        {
+          "number": 7,
+          "max_marks": 1.0,
+          "paper_pdf_page": 8,
+          "answer_pdf_page": 8
+        },
+        {
+          "number": 8,
+          "max_marks": 1.0,
+          "paper_pdf_page": 9,
+          "answer_pdf_page": 9
+        },
+        {
+          "number": 9,
+          "max_marks": 1.0,
+          "paper_pdf_page": 9,
+          "answer_pdf_page": 9
+        },
+        {
+          "number": 10,
+          "max_marks": 1.0,
+          "paper_pdf_page": 10,
+          "answer_pdf_page": 10
+        },
+        {
+          "number": 11,
+          "max_marks": 2.0,
+          "paper_pdf_page": 12,
+          "answer_pdf_page": 12
+        },
+        {
+          "number": 12,
+          "max_marks": 1.0,
+          "paper_pdf_page": 12,
+          "answer_pdf_page": 12
+        },
+        {
+          "number": 13,
+          "max_marks": 1.0,
+          "paper_pdf_page": 13,
+          "answer_pdf_page": 13
+        },
+        {
+          "number": 14,
+          "max_marks": 1.0,
+          "paper_pdf_page": 14,
+          "answer_pdf_page": 14
+        },
+        {
+          "number": 15,
+          "max_marks": 1.0,
+          "paper_pdf_page": 14,
+          "answer_pdf_page": 14
+        },
+        {
+          "number": 16,
+          "max_marks": 1.0,
+          "paper_pdf_page": 15,
+          "answer_pdf_page": 15
+        },
+        {
+          "number": 17,
+          "max_marks": 1.0,
+          "paper_pdf_page": 15,
+          "answer_pdf_page": 15
+        },
+        {
+          "number": 18,
+          "max_marks": 1.0,
+          "paper_pdf_page": 15,
+          "answer_pdf_page": 15
+        },
+        {
+          "number": 19,
+          "max_marks": 1.0,
+          "paper_pdf_page": 16,
+          "answer_pdf_page": 16
+        },
+        {
+          "number": 20,
+          "max_marks": 1.0,
+          "paper_pdf_page": 19,
+          "answer_pdf_page": 19
+        },
+        {
+          "number": 21,
+          "max_marks": 1.0,
+          "paper_pdf_page": 20,
+          "answer_pdf_page": 20
+        },
+        {
+          "number": 22,
+          "max_marks": 1.0,
+          "paper_pdf_page": 21,
+          "answer_pdf_page": 21
+        },
+        {
+          "number": 23,
+          "max_marks": 1.0,
+          "paper_pdf_page": 21,
+          "answer_pdf_page": 21
+        },
+        {
+          "number": 24,
+          "max_marks": 1.0,
+          "paper_pdf_page": 22,
+          "answer_pdf_page": 22
+        },
+        {
+          "number": 25,
+          "max_marks": 1.0,
+          "paper_pdf_page": 23,
+          "answer_pdf_page": 23
+        },
+        {
+          "number": 26,
+          "max_marks": 1.0,
+          "paper_pdf_page": 23,
+          "answer_pdf_page": 23
+        },
+        {
+          "number": 27,
+          "max_marks": 1.0,
+          "paper_pdf_page": 25,
+          "answer_pdf_page": 25
+        },
+        {
+          "number": 28,
+          "max_marks": 1.0,
+          "paper_pdf_page": 26,
+          "answer_pdf_page": 26
+        },
+        {
+          "number": 29,
+          "max_marks": 1.0,
+          "paper_pdf_page": 26,
+          "answer_pdf_page": 26
+        },
+        {
+          "number": 30,
+          "max_marks": 2.0,
+          "paper_pdf_page": 27,
+          "answer_pdf_page": 27
+        },
+        {
+          "number": 31,
+          "max_marks": 2.0,
+          "paper_pdf_page": 28,
+          "answer_pdf_page": 28
+        },
+        {
+          "number": 32,
+          "max_marks": 1.0,
+          "paper_pdf_page": 30,
+          "answer_pdf_page": 30
+        },
+        {
+          "number": 33,
+          "max_marks": 1.0,
+          "paper_pdf_page": 30,
+          "answer_pdf_page": 30
+        },
+        {
+          "number": 34,
+          "max_marks": 1.0,
+          "paper_pdf_page": 31,
+          "answer_pdf_page": 31
+        },
+        {
+          "number": 35,
+          "max_marks": 1.0,
+          "paper_pdf_page": 33,
+          "answer_pdf_page": 33
+        },
+        {
+          "number": 36,
+          "max_marks": 1.0,
+          "paper_pdf_page": 34,
+          "answer_pdf_page": 34
+        },
+        {
+          "number": 37,
+          "max_marks": 1.0,
+          "paper_pdf_page": 34,
+          "answer_pdf_page": 34
+        },
+        {
+          "number": 38,
+          "max_marks": 1.0,
+          "paper_pdf_page": 35,
+          "answer_pdf_page": 36
+        },
+        {
+          "number": 39,
+          "max_marks": 1.0,
+          "paper_pdf_page": 36,
+          "answer_pdf_page": 36
+        },
+        {
+          "number": 40,
+          "max_marks": 1.0,
+          "paper_pdf_page": 36,
+          "answer_pdf_page": 37
+        },
+        {
+          "number": 41,
+          "max_marks": 1.0,
+          "paper_pdf_page": 36,
+          "answer_pdf_page": 37
+        },
+        {
+          "number": 42,
+          "max_marks": 1.0,
+          "paper_pdf_page": 37,
+          "answer_pdf_page": 38
+        },
+        {
+          "number": 43,
+          "max_marks": 1.0,
+          "paper_pdf_page": 38,
+          "answer_pdf_page": 39
+        },
+        {
+          "number": 44,
+          "max_marks": 1.0,
+          "paper_pdf_page": 38,
+          "answer_pdf_page": 39
+        },
+        {
+          "number": 45,
+          "max_marks": 1.0,
+          "paper_pdf_page": 39,
+          "answer_pdf_page": 40
+        },
+        {
+          "number": 46,
+          "max_marks": 1.0,
+          "paper_pdf_page": 40,
+          "answer_pdf_page": 41
+        },
+        {
+          "number": 47,
+          "max_marks": 2.0,
+          "paper_pdf_page": 41,
+          "answer_pdf_page": 43
+        },
+        {
+          "number": 48,
+          "max_marks": 1.0,
+          "paper_pdf_page": 42,
+          "answer_pdf_page": 44
+        },
+        {
+          "number": 49,
+          "max_marks": 1.0,
+          "paper_pdf_page": 42,
+          "answer_pdf_page": 44
+        },
+        {
+          "number": 50,
+          "max_marks": 1.0,
+          "paper_pdf_page": 43,
+          "answer_pdf_page": 45
+        },
+        {
+          "number": 51,
+          "max_marks": 1.0,
+          "paper_pdf_page": 45,
+          "answer_pdf_page": 47
+        },
+        {
+          "number": 52,
+          "max_marks": 1.0,
+          "paper_pdf_page": 46,
+          "answer_pdf_page": 49
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "level": "Years 9–10",
+      "reading_minutes": 0,
+      "exam_minutes": 120,
+      "continuous_minutes": 120,
+      "question_count": 49,
+      "total_marks": 50,
+      "paper_url": "/resources/jso-2025-paper.pdf",
+      "answers_url": "/resources/jso-2025-answers.pdf",
+      "record_url": "/exam-record.html?year=2025",
+      "paper_file": "2025-JSOE_Years-9-and-10.pdf",
+      "answer_file": "2025-JSOE_Years-9-and-10_answers.pdf",
+      "paper_sha256": "ff819f9ac4c9a75de58088d1da4b5d757eb1ed2e3d845509081b717ab4a023d4",
+      "answer_sha256": "4b0864bb641bfcd2432f1f4a9eb65477e00b786e5ce15e9959291731c653c6ea",
+      "paper_pages": 64,
+      "answer_pages": 67,
+      "questions": [
+        {
+          "number": 1,
+          "max_marks": 1.0,
+          "paper_pdf_page": 5,
+          "answer_pdf_page": 5
+        },
+        {
+          "number": 2,
+          "max_marks": 1.0,
+          "paper_pdf_page": 5,
+          "answer_pdf_page": 5
+        },
+        {
+          "number": 3,
+          "max_marks": 1.0,
+          "paper_pdf_page": 6,
+          "answer_pdf_page": 6
+        },
+        {
+          "number": 4,
+          "max_marks": 1.0,
+          "paper_pdf_page": 8,
+          "answer_pdf_page": 8
+        },
+        {
+          "number": 5,
+          "max_marks": 1.0,
+          "paper_pdf_page": 8,
+          "answer_pdf_page": 8
+        },
+        {
+          "number": 6,
+          "max_marks": 1.0,
+          "paper_pdf_page": 10,
+          "answer_pdf_page": 10
+        },
+        {
+          "number": 7,
+          "max_marks": 1.0,
+          "paper_pdf_page": 10,
+          "answer_pdf_page": 10
+        },
+        {
+          "number": 8,
+          "max_marks": 1.0,
+          "paper_pdf_page": 11,
+          "answer_pdf_page": 11
+        },
+        {
+          "number": 9,
+          "max_marks": 1.0,
+          "paper_pdf_page": 12,
+          "answer_pdf_page": 12
+        },
+        {
+          "number": 10,
+          "max_marks": 1.0,
+          "paper_pdf_page": 13,
+          "answer_pdf_page": 13
+        },
+        {
+          "number": 11,
+          "max_marks": 1.0,
+          "paper_pdf_page": 14,
+          "answer_pdf_page": 14
+        },
+        {
+          "number": 12,
+          "max_marks": 1.0,
+          "paper_pdf_page": 14,
+          "answer_pdf_page": 14
+        },
+        {
+          "number": 13,
+          "max_marks": 1.0,
+          "paper_pdf_page": 15,
+          "answer_pdf_page": 15
+        },
+        {
+          "number": 14,
+          "max_marks": 1.0,
+          "paper_pdf_page": 16,
+          "answer_pdf_page": 16
+        },
+        {
+          "number": 15,
+          "max_marks": 1.0,
+          "paper_pdf_page": 17,
+          "answer_pdf_page": 17
+        },
+        {
+          "number": 16,
+          "max_marks": 1.0,
+          "paper_pdf_page": 17,
+          "answer_pdf_page": 17
+        },
+        {
+          "number": 17,
+          "max_marks": 1.0,
+          "paper_pdf_page": 19,
+          "answer_pdf_page": 19
+        },
+        {
+          "number": 18,
+          "max_marks": 1.0,
+          "paper_pdf_page": 20,
+          "answer_pdf_page": 20
+        },
+        {
+          "number": 19,
+          "max_marks": 1.0,
+          "paper_pdf_page": 20,
+          "answer_pdf_page": 20
+        },
+        {
+          "number": 20,
+          "max_marks": 1.0,
+          "paper_pdf_page": 21,
+          "answer_pdf_page": 21
+        },
+        {
+          "number": 21,
+          "max_marks": 1.0,
+          "paper_pdf_page": 22,
+          "answer_pdf_page": 22
+        },
+        {
+          "number": 22,
+          "max_marks": 1.0,
+          "paper_pdf_page": 23,
+          "answer_pdf_page": 23
+        },
+        {
+          "number": 23,
+          "max_marks": 1.0,
+          "paper_pdf_page": 23,
+          "answer_pdf_page": 23
+        },
+        {
+          "number": 24,
+          "max_marks": 1.0,
+          "paper_pdf_page": 24,
+          "answer_pdf_page": 24
+        },
+        {
+          "number": 25,
+          "max_marks": 1.0,
+          "paper_pdf_page": 24,
+          "answer_pdf_page": 24
+        },
+        {
+          "number": 26,
+          "max_marks": 1.0,
+          "paper_pdf_page": 26,
+          "answer_pdf_page": 26
+        },
+        {
+          "number": 27,
+          "max_marks": 1.0,
+          "paper_pdf_page": 27,
+          "answer_pdf_page": 27
+        },
+        {
+          "number": 28,
+          "max_marks": 1.0,
+          "paper_pdf_page": 27,
+          "answer_pdf_page": 27
+        },
+        {
+          "number": 29,
+          "max_marks": 1.0,
+          "paper_pdf_page": 29,
+          "answer_pdf_page": 29
+        },
+        {
+          "number": 30,
+          "max_marks": 1.0,
+          "paper_pdf_page": 30,
+          "answer_pdf_page": 30
+        },
+        {
+          "number": 31,
+          "max_marks": 1.0,
+          "paper_pdf_page": 30,
+          "answer_pdf_page": 32
+        },
+        {
+          "number": 32,
+          "max_marks": 2.0,
+          "paper_pdf_page": 32,
+          "answer_pdf_page": 34
+        },
+        {
+          "number": 33,
+          "max_marks": 1.0,
+          "paper_pdf_page": 32,
+          "answer_pdf_page": 34
+        },
+        {
+          "number": 34,
+          "max_marks": 1.0,
+          "paper_pdf_page": 35,
+          "answer_pdf_page": 37
+        },
+        {
+          "number": 35,
+          "max_marks": 1.0,
+          "paper_pdf_page": 36,
+          "answer_pdf_page": 38
+        },
+        {
+          "number": 36,
+          "max_marks": 1.0,
+          "paper_pdf_page": 40,
+          "answer_pdf_page": 42
+        },
+        {
+          "number": 37,
+          "max_marks": 1.0,
+          "paper_pdf_page": 40,
+          "answer_pdf_page": 42
+        },
+        {
+          "number": 38,
+          "max_marks": 1.0,
+          "paper_pdf_page": 42,
+          "answer_pdf_page": 44
+        },
+        {
+          "number": 39,
+          "max_marks": 1.0,
+          "paper_pdf_page": 42,
+          "answer_pdf_page": 44
+        },
+        {
+          "number": 40,
+          "max_marks": 1.0,
+          "paper_pdf_page": 43,
+          "answer_pdf_page": 45
+        },
+        {
+          "number": 41,
+          "max_marks": 1.0,
+          "paper_pdf_page": 43,
+          "answer_pdf_page": 45
+        },
+        {
+          "number": 42,
+          "max_marks": 1.0,
+          "paper_pdf_page": 51,
+          "answer_pdf_page": 53
+        },
+        {
+          "number": 43,
+          "max_marks": 1.0,
+          "paper_pdf_page": 52,
+          "answer_pdf_page": 54
+        },
+        {
+          "number": 44,
+          "max_marks": 1.0,
+          "paper_pdf_page": 54,
+          "answer_pdf_page": 56
+        },
+        {
+          "number": 45,
+          "max_marks": 1.0,
+          "paper_pdf_page": 56,
+          "answer_pdf_page": 59
+        },
+        {
+          "number": 46,
+          "max_marks": 1.0,
+          "paper_pdf_page": 58,
+          "answer_pdf_page": 61
+        },
+        {
+          "number": 47,
+          "max_marks": 1.0,
+          "paper_pdf_page": 59,
+          "answer_pdf_page": 62
+        },
+        {
+          "number": 48,
+          "max_marks": 1.0,
+          "paper_pdf_page": 61,
+          "answer_pdf_page": 64
+        },
+        {
+          "number": 49,
+          "max_marks": 1.0,
+          "paper_pdf_page": 63,
+          "answer_pdf_page": 66
+        }
+      ]
+    }
+  ],
+  "marking_policy": [
+    "Use the original marked PDF visually; some answers or reasoning are in highlights/annotations.",
+    "Use each printed maximum and the question/key-specific partial-credit, numerical-tolerance and significant-figure rule.",
+    "No negative marking stated in these papers; unanswered items earn no credit. Extra responses follow the item rule; unclear cases remain unresolved, not guessed.",
+    "Freeze the timed response before marking; record correction and uncertain marks separately.",
+    "Subject buckets are teacher diagnostics, assigned once per item; they are not official section scores."
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="260" viewBox="0 0 780 260" role="img" aria-label="Precipitation, filtration and thermal conversion process">
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8" fill="#087b72"/></marker></defs>
+<rect width="780" height="260" fill="white"/><g font-family="Arial,sans-serif" font-size="20" fill="#173b46" text-anchor="middle">
+<g fill="#eff8f6" stroke="#087b72" stroke-width="2"><rect x="15" y="80" width="170" height="75" rx="8"/><rect x="270" y="80" width="170" height="75" rx="8"/><rect x="535" y="80" width="220" height="75" rx="8"/></g>
+<text x="100" y="110">Mix MgCl₂(aq)</text><text x="100" y="137">and NaOH(aq)</text>
+<text x="355" y="110">Filter solid</text><text x="355" y="137">Mg(OH)₂</text>
+<text x="645" y="110">Heat recovered solid</text><text x="645" y="137">to MgO + water</text>
+<g stroke="#087b72" stroke-width="2" marker-end="url(#arrow)"><path d="M185 118H265"/><path d="M440 118H530"/><path d="M355 155V210"/></g>
+<text x="224" y="65">Precipitate</text><text x="485" y="65">Recover</text><text x="355" y="239">Filtrate leaves the process</text>
+</g></svg>

@@ -1,0 +1,510 @@
+{
+  "revision": "2026-10-22-pathways-r8",
+  "source_bank_revision": "2026-10-22-final-r12",
+  "source_bank_sha256": "2b4b806f14db42ee16759ed9a9c1e938c1b70eaed425bc4a5b1e496a1ee7c105",
+  "counts": {
+    "topics": 13,
+    "pages": 89,
+    "questions": 457
+  },
+  "totals": {
+    "practice_minutes": 3190,
+    "brief_minutes": 700,
+    "base_minutes": 3890,
+    "original_brief_minutes": 560
+  },
+  "route_a": {
+    "minutes": 2400,
+    "selected_page_ids": [
+      "t08-medium-benchmark3-01",
+      "t08-medium-benchmark3-02",
+      "topic-09-medium-depth2-01",
+      "topic-09-medium-depth2-02",
+      "topic-10-medium-depth2-01-r3",
+      "topic-10-medium-depth2-02",
+      "topic-11-medium-depth2-01",
+      "topic-11-medium-depth2-02-r3",
+      "topic-12-medium-depth2-01-r5",
+      "topic-12-medium-depth2-02-r3",
+      "topic-13-medium-depth2-01-r4",
+      "topic-13-medium-depth2-02-r3",
+      "topic-14-medium-depth2-01",
+      "topic-14-medium-depth2-02",
+      "topic-15-medium-depth2-01",
+      "topic-15-medium-depth2-02",
+      "t08-hard-benchmark3-01-r3",
+      "t09-hard-benchmark3-01",
+      "topic-10-hard-depth2-01",
+      "topic-11-hard-depth2-01",
+      "topic-08-test-depth2-01",
+      "topic-09-test-depth2-01",
+      "topic-10-test-depth2-01",
+      "topic-11-test-depth2-01",
+      "topic-12-test-depth2-01-r5",
+      "topic-13-test-depth2-01-r4",
+      "topic-14-test-depth2-01",
+      "topic-15-test-depth2-01",
+      "term-01-review-test-depth2-01"
+    ],
+    "page_count": 29,
+    "scored_questions": 149,
+    "categories": [
+      {
+        "category": "Concept Briefs",
+        "basis": "The full current allowance for the 11 original topics; select familiar sections without spending the saved time twice",
+        "minutes": 560
+      },
+      {
+        "category": "Core first attempts",
+        "basis": "Both Core pages in each of Gases through Acids & rates: 16 pages",
+        "minutes": 560
+      },
+      {
+        "category": "Selected Stretch",
+        "basis": "Default: first Stretch page in Gases, Heat, Waves and Light: 4 pages; swap, rather than add, if another topic needs it",
+        "minutes": 160
+      },
+      {
+        "category": "Chapter/capstone tests",
+        "basis": "Eight new-topic Sample Tests plus Integration: 9 pages; Mechanics/Diagnostics tests remain available for later",
+        "minutes": 360
+      },
+      {
+        "category": "Maths and prerequisite bridges",
+        "basis": "Select relevant maths tools; retain C_V and linear-expansion teaching before Integration Test",
+        "minutes": 60
+      },
+      {
+        "category": "Correction, written method and oral review",
+        "basis": "Preserve first work; repair the actual gap and record assistance",
+        "minutes": 360
+      },
+      {
+        "category": "Due delayed reviews",
+        "basis": "Fresh checks of earlier ideas, normally 7–14 days after targeted help; not repetitions of the same answer",
+        "minutes": 120
+      },
+      {
+        "category": "Short breaks, transitions and record keeping",
+        "basis": "Ten minutes per two-hour sitting, 20 sittings",
+        "minutes": 200
+      },
+      {
+        "category": "Contingency",
+        "basis": "Small remaining reserve; larger overruns need a page swap or a longer calendar",
+        "minutes": 20
+      }
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "title": "Gases",
+        "topic_ids": [
+          "topic-08"
+        ],
+        "pages": [
+          "t08-medium-benchmark3-01",
+          "t08-medium-benchmark3-02",
+          "t08-hard-benchmark3-01-r3",
+          "topic-08-test-depth2-01"
+        ],
+        "brief_minutes": 45,
+        "first_attempt_minutes": 150,
+        "learning_minutes": 195,
+        "maths_bridge_minutes": 20,
+        "correction_minutes": 35,
+        "due_review_minutes": 0,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 270,
+        "cumulative_start": 0,
+        "cumulative_end": 270,
+        "indicative_start_week": 1,
+        "indicative_end_week": 2
+      },
+      {
+        "stage": 2,
+        "title": "Heat",
+        "topic_ids": [
+          "topic-09"
+        ],
+        "pages": [
+          "topic-09-medium-depth2-01",
+          "topic-09-medium-depth2-02",
+          "t09-hard-benchmark3-01",
+          "topic-09-test-depth2-01"
+        ],
+        "brief_minutes": 45,
+        "first_attempt_minutes": 150,
+        "learning_minutes": 195,
+        "maths_bridge_minutes": 10,
+        "correction_minutes": 35,
+        "due_review_minutes": 0,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 260,
+        "cumulative_start": 270,
+        "cumulative_end": 530,
+        "indicative_start_week": 2,
+        "indicative_end_week": 3
+      },
+      {
+        "stage": 3,
+        "title": "Waves",
+        "topic_ids": [
+          "topic-10"
+        ],
+        "pages": [
+          "topic-10-medium-depth2-01-r3",
+          "topic-10-medium-depth2-02",
+          "topic-10-hard-depth2-01",
+          "topic-10-test-depth2-01"
+        ],
+        "brief_minutes": 45,
+        "first_attempt_minutes": 150,
+        "learning_minutes": 195,
+        "maths_bridge_minutes": 0,
+        "correction_minutes": 35,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 265,
+        "cumulative_start": 530,
+        "cumulative_end": 795,
+        "indicative_start_week": 3,
+        "indicative_end_week": 4
+      },
+      {
+        "stage": 4,
+        "title": "Light",
+        "topic_ids": [
+          "topic-11"
+        ],
+        "pages": [
+          "topic-11-medium-depth2-01",
+          "topic-11-medium-depth2-02-r3",
+          "topic-11-hard-depth2-01",
+          "topic-11-test-depth2-01"
+        ],
+        "brief_minutes": 60,
+        "first_attempt_minutes": 150,
+        "learning_minutes": 210,
+        "maths_bridge_minutes": 0,
+        "correction_minutes": 40,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 285,
+        "cumulative_start": 795,
+        "cumulative_end": 1080,
+        "indicative_start_week": 4,
+        "indicative_end_week": 5
+      },
+      {
+        "stage": 5,
+        "title": "Circuits",
+        "topic_ids": [
+          "topic-12"
+        ],
+        "pages": [
+          "topic-12-medium-depth2-01-r5",
+          "topic-12-medium-depth2-02-r3",
+          "topic-12-test-depth2-01-r5"
+        ],
+        "brief_minutes": 70,
+        "first_attempt_minutes": 110,
+        "learning_minutes": 180,
+        "maths_bridge_minutes": 0,
+        "correction_minutes": 40,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 255,
+        "cumulative_start": 1080,
+        "cumulative_end": 1335,
+        "indicative_start_week": 5,
+        "indicative_end_week": 6
+      },
+      {
+        "stage": 6,
+        "title": "Atoms",
+        "topic_ids": [
+          "topic-13"
+        ],
+        "pages": [
+          "topic-13-medium-depth2-01-r4",
+          "topic-13-medium-depth2-02-r3",
+          "topic-13-test-depth2-01-r4"
+        ],
+        "brief_minutes": 80,
+        "first_attempt_minutes": 110,
+        "learning_minutes": 190,
+        "maths_bridge_minutes": 5,
+        "correction_minutes": 40,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 270,
+        "cumulative_start": 1335,
+        "cumulative_end": 1605,
+        "indicative_start_week": 6,
+        "indicative_end_week": 7
+      },
+      {
+        "stage": 7,
+        "title": "Reactions",
+        "topic_ids": [
+          "topic-14"
+        ],
+        "pages": [
+          "topic-14-medium-depth2-01",
+          "topic-14-medium-depth2-02",
+          "topic-14-test-depth2-01"
+        ],
+        "brief_minutes": 35,
+        "first_attempt_minutes": 110,
+        "learning_minutes": 145,
+        "maths_bridge_minutes": 0,
+        "correction_minutes": 30,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 210,
+        "cumulative_start": 1605,
+        "cumulative_end": 1815,
+        "indicative_start_week": 7,
+        "indicative_end_week": 8
+      },
+      {
+        "stage": 8,
+        "title": "Acids & rates",
+        "topic_ids": [
+          "topic-15"
+        ],
+        "pages": [
+          "topic-15-medium-depth2-01",
+          "topic-15-medium-depth2-02",
+          "topic-15-test-depth2-01"
+        ],
+        "brief_minutes": 35,
+        "first_attempt_minutes": 110,
+        "learning_minutes": 145,
+        "maths_bridge_minutes": 0,
+        "correction_minutes": 30,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 210,
+        "cumulative_start": 1815,
+        "cumulative_end": 2025,
+        "indicative_start_week": 8,
+        "indicative_end_week": 9
+      },
+      {
+        "stage": 9,
+        "title": "Mechanics + Diagnostics",
+        "topic_ids": [
+          "mechanics-review",
+          "topic-07-review"
+        ],
+        "pages": [],
+        "brief_minutes": 100,
+        "first_attempt_minutes": 0,
+        "learning_minutes": 100,
+        "maths_bridge_minutes": 5,
+        "correction_minutes": 30,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 0,
+        "total_minutes": 170,
+        "cumulative_start": 2025,
+        "cumulative_end": 2195,
+        "indicative_start_week": 9,
+        "indicative_end_week": 10
+      },
+      {
+        "stage": 10,
+        "title": "Integration",
+        "topic_ids": [
+          "term-01-review"
+        ],
+        "pages": [
+          "term-01-review-test-depth2-01"
+        ],
+        "brief_minutes": 45,
+        "first_attempt_minutes": 40,
+        "learning_minutes": 85,
+        "maths_bridge_minutes": 20,
+        "correction_minutes": 45,
+        "due_review_minutes": 15,
+        "break_records_minutes": 20,
+        "contingency_minutes": 20,
+        "total_minutes": 205,
+        "cumulative_start": 2195,
+        "cumulative_end": 2400,
+        "indicative_start_week": 10,
+        "indicative_end_week": 10
+      }
+    ],
+    "follow_up_minutes": [
+      30,
+      60
+    ],
+    "follow_up_extra_calendar_days": [
+      7,
+      14
+    ],
+    "prerequisite_bridges": [
+      {
+        "topic_id": "topic-08",
+        "level": "hard",
+        "page_id": "t08-hard-benchmark3-01-r3",
+        "question_id": "t08-s3-06-r3",
+        "concept": "Molar constant-volume heat capacity C_V; internal-energy conservation",
+        "required_before": "term-01-review-test-depth2-01"
+      },
+      {
+        "topic_id": "term-01-review",
+        "level": "hard",
+        "page_id": "term-01-review-hard-depth2-02-r3",
+        "question_id": "term-01-review-d2-hard-02-05-r3",
+        "concept": "Linear length expansion; coefficient/unit and difference from volume expansion",
+        "required_before": "term-01-review-test-depth2-01"
+      }
+    ],
+    "stretch_swap_alternatives": [
+      "topic-12-hard-depth2-01-r3",
+      "mechanics-review-hard-depth2-01"
+    ]
+  },
+  "route_b": {
+    "academic_overheads": [
+      {
+        "category": "Correction, written and oral work",
+        "low": 900,
+        "high": 1320,
+        "basis": "15–22 h reserved; includes the selected route’s 6 h, not an addition to it"
+      },
+      {
+        "category": "Delayed review",
+        "low": 240,
+        "high": 360,
+        "basis": "4–6 h including final follow-ups; count actual help/date conditions"
+      },
+      {
+        "category": "Maths and prerequisite repair",
+        "low": 120,
+        "high": 240,
+        "basis": "2–4 h including the selected route’s 1 h; expand only where a gap is observed"
+      },
+      {
+        "category": "Short breaks, transitions and records",
+        "low": 540,
+        "high": 600,
+        "basis": "9–10 h across the full route, maintaining about 10 min per two-hour sitting; includes Route A’s 3 h 20 min"
+      },
+      {
+        "category": "Two unseen full papers and marking",
+        "low": 370,
+        "high": 490,
+        "basis": "250 min of paper/reading time plus 120–240 min marking and error discussion"
+      }
+    ],
+    "academic_total_minutes": [
+      6060,
+      6900
+    ],
+    "practical_extra_minutes": [
+      240,
+      480
+    ],
+    "with_practical_minutes": [
+      6300,
+      7380
+    ],
+    "breadth_first_page_ids": [
+      "biology-foundations-r9-easy-01",
+      "biology-foundations-r9-easy-02",
+      "biology-foundations-r9-medium-01",
+      "biology-foundations-r9-medium-02",
+      "biology-foundations-r9-test-01",
+      "earth-environment-r10-easy-01",
+      "earth-environment-r10-easy-02",
+      "earth-environment-r10-medium-01",
+      "earth-environment-r10-medium-02",
+      "earth-environment-r10-test-01"
+    ],
+    "breadth_first_base_minutes": 480,
+    "remaining_page_ids": [
+      "mechanics-review-medium-depth2-01",
+      "mechanics-review-medium-depth2-02",
+      "mechanics-review-hard-depth2-01",
+      "mechanics-review-hard-depth2-02-r12",
+      "mechanics-review-test-depth2-01",
+      "t08-foundation-01",
+      "t08-foundation-02",
+      "topic-08-hard-depth2-02",
+      "t09-foundation-01",
+      "topic-09-easy-depth2-02",
+      "t09-hard-benchmark3-02",
+      "t10-foundation-01",
+      "t10-foundation-02",
+      "topic-10-hard-depth2-02",
+      "t11-foundation-01",
+      "t11-foundation-02-r3",
+      "topic-11-hard-depth2-02-r5",
+      "t12-foundation-01",
+      "t12-foundation-02",
+      "topic-12-hard-depth2-01-r3",
+      "topic-12-hard-depth2-02-r5",
+      "t13-foundation-01-r3",
+      "t13-foundation-02-r4",
+      "topic-13-hard-depth2-01-r3",
+      "topic-13-hard-depth2-02",
+      "t14-foundation-01",
+      "t14-foundation-02",
+      "t14-hard-benchmark3-01",
+      "topic-14-hard-depth2-02",
+      "t15-foundation-01",
+      "t15-foundation-02",
+      "topic-15-hard-depth2-01",
+      "topic-15-hard-depth2-02",
+      "t7d-foundation-01",
+      "t7d-foundation-02",
+      "topic-07-review-medium-depth2-01",
+      "topic-07-review-medium-depth2-02",
+      "topic-07-review-hard-v4-01",
+      "topic-07-review-hard-depth2-02",
+      "topic-07-review-test-depth2-01",
+      "term-01-review-easy-depth2-01",
+      "term-01-review-easy-depth2-02",
+      "term-01-review-medium-depth2-01",
+      "term-01-review-medium-depth2-02",
+      "term-01-review-hard-depth2-01",
+      "term-01-review-hard-depth2-02-r3",
+      "biology-foundations-r9-hard-01",
+      "biology-foundations-r9-hard-02",
+      "earth-environment-r10-hard-01",
+      "earth-environment-r10-hard-02"
+    ],
+    "already_includes_route_a": true
+  },
+  "exam_instructions": [
+    {
+      "year": 2024,
+      "reading_minutes": 10,
+      "exam_minutes": 120,
+      "source": "resources/jso-2024-paper.pdf",
+      "instruction_pdf_page": 2
+    },
+    {
+      "year": 2025,
+      "reading_minutes": 0,
+      "exam_minutes": 120,
+      "source": "resources/jso-2025-paper.pdf",
+      "instruction_pdf_page": 2
+    }
+  ],
+  "learner_timing_evidence": "Only four untracked legacy page submissions; elapsed time includes breaks. Not sufficient to fit a learner speed or forecast completion.",
+  "status": "Planning allowances and a target menu, not measured learner outcomes or automatic mastery."
+}

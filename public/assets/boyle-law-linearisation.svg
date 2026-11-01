@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Linearising Boyle's law data</title>
+  <desc id="desc">Pressure plotted against volume is a curve, while pressure plotted against reciprocal volume is a straight line through the origin.</desc>
+  <rect width="1200" height="560" rx="28" fill="#f7fbfa"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#143a5b">Linearisation: choose axes that turn the model into a straight line</text>
+  <text x="600" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#50657a">For Boyle’s law, P = K/V, so plotting P against 1/V gives y = Kx.</text>
+
+  <g transform="translate(85 125)">
+    <rect width="430" height="335" rx="18" fill="white" stroke="#d1e2df" stroke-width="3"/>
+    <text x="215" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#143a5b">Raw plot: P against V</text>
+    <line x1="70" y1="270" x2="380" y2="270" stroke="#143a5b" stroke-width="4" marker-end="url(#axis)"/>
+    <line x1="70" y1="270" x2="70" y2="65" stroke="#143a5b" stroke-width="4" marker-end="url(#axis)"/>
+    <text x="390" y="292" font-family="Arial, sans-serif" font-size="20" fill="#143a5b">V</text>
+    <text x="45" y="70" font-family="Arial, sans-serif" font-size="20" fill="#143a5b">P</text>
+    <path d="M105 85 C140 135, 185 185, 355 245" fill="none" stroke="#1f8f86" stroke-width="7"/>
+    <g fill="#e18a35"><circle cx="112" cy="95" r="7"/><circle cx="145" cy="140" r="7"/><circle cx="195" cy="185" r="7"/><circle cx="260" cy="220" r="7"/><circle cx="345" cy="244" r="7"/></g>
+    <text x="215" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#50657a">Correct relationship, but the graph is curved.</text>
+  </g>
+
+  <path d="M535 292 H650" stroke="#e18a35" stroke-width="9" marker-end="url(#arrow)"/>
+  <text x="592" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9a5b21">replace V by 1/V</text>
+
+  <g transform="translate(685 125)">
+    <rect width="430" height="335" rx="18" fill="white" stroke="#d1e2df" stroke-width="3"/>
+    <text x="215" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#143a5b">Linearised plot: P against 1/V</text>
+    <line x1="70" y1="270" x2="380" y2="270" stroke="#143a5b" stroke-width="4" marker-end="url(#axis)"/>
+    <line x1="70" y1="270" x2="70" y2="65" stroke="#143a5b" stroke-width="4" marker-end="url(#axis)"/>
+    <text x="375" y="300" font-family="Arial, sans-serif" font-size="20" fill="#143a5b">1/V</text>
+    <text x="45" y="70" font-family="Arial, sans-serif" font-size="20" fill="#143a5b">P</text>
+    <line x1="75" y1="268" x2="355" y2="82" stroke="#1f8f86" stroke-width="7"/>
+    <g fill="#e18a35"><circle cx="108" cy="246" r="7"/><circle cx="160" cy="212" r="7"/><circle cx="220" cy="172" r="7"/><circle cx="285" cy="128" r="7"/><circle cx="345" cy="89" r="7"/></g>
+    <text x="215" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#50657a">A straight line supports P ∝ 1/V.</text>
+  </g>
+
+  <text x="600" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#143a5b">Gradient = K = PV; an ideal corrected experiment has an intercept close to zero.</text>
+  <defs>
+    <marker id="axis" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L0,8 L9,4 z" fill="#143a5b"/></marker>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto"><path d="M0,0 L0,8 L9,4 z" fill="#e18a35"/></marker>
+  </defs>
+</svg>

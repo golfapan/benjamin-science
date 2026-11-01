@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Benjamin’s adaptive science learning">
+  <title>Benjamin</title>
+  <link rel="stylesheet" href="/styles.css?v=20261022-figures-02">
+  <link rel="stylesheet" href="/concept-map.css?v=20261102-layers">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Benjamin home">
+      <span class="brand-mark">B</span>
+      <span><strong>Benjamin</strong><small>Adaptive local course</small></span>
+    </a>
+    <nav>
+      <button class="nav-button" data-view="home">Course map</button>
+      <button class="nav-button" data-view="instructor">Progress</button>
+      <a href="/study-guide.html">Study guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home-view" class="view active">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">KNOWLEDGE × DIFFICULTY</p>
+          <h1 id="course-title">Benjamin</h1>
+          <p id="course-subtitle" class="hero-copy"></p>
+          <div class="flow-strip" aria-label="Adaptive learning sequence">
+            <span>Concept brief</span><b>→</b><span>5–6-question page</span><b>→</b><span>Hints and revision</span><b>→</b><span>Next-page adjustment</span>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <strong id="topic-count">13</strong><span>active topic stages</span>
+          <strong>4</strong><span>course layers</span>
+          <strong>5–6</strong><span>scored questions per page</span>
+        </div>
+      </div>
+
+      <section class="panel map-panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">COURSE ARCHITECTURE</p><h2>Knowledge–difficulty map</h2></div>
+          <p><strong>Full-bank route:</strong> Foundation, Core, Stretch and Sample Test. The Study guide provides a 40-hour selection and later breadth stages. Choose any active cell.</p>
+        </div>
+        <div class="map-shell">
+          <div class="y-axis"><span>Sample test</span><span>Olympiad stretch</span><span>Olympiad core</span><span>Olympiad foundation</span></div>
+          <div id="knowledge-map" class="knowledge-map" aria-label="Two-dimensional course map"></div>
+        </div>
+        <div class="x-axis">Knowledge coverage and prerequisite progression →</div>
+        <p class="map-note"><span class="dot recommended"></span> Recommended next <span class="dot available"></span> Available - click to open <span class="dot complete"></span> Completed <span class="dot exempt"></span> Previously covered <span class="dot planned"></span> Planned</p>
+      </section>
+      <section class="panel access-panel" aria-labelledby="access-heading">
+        <div>
+          <p class="eyebrow">OPEN THE COURSE</p>
+          <h2 id="access-heading">Learn on any of your devices</h2>
+          <p class="muted">Enter answers, submit for marking and correct missed questions. Online progress is saved securely across your devices. Earlier work on the Mac remains separate and has not been imported.</p>
+        </div>
+        <div class="access-options">
+          <a id="local-course-link" class="access-card" href="/">
+            <span>Online course</span><strong id="local-course-url">/</strong><small>Open the course here</small>
+          </a>
+          <div class="access-card wifi-card">
+            <span>Open on another device</span>
+            <strong id="wifi-course-url">Loading course address…</strong>
+            <button id="copy-wifi-link" class="secondary-button" type="button">Copy device link</button>
+            <small id="copy-status">Use this address and sign in with your approved email.</small>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <section id="course-view" class="view">
+      <div id="course-hub">
+        <button id="back-to-map" class="text-button back-button" type="button">← Back to course map</button>
+        <article id="topic-lesson" class="panel lesson-brief"></article>
+        <section id="course-picker" class="panel course-picker">
+          <div class="section-heading">
+            <div><p id="picker-level" class="eyebrow"></p><h2 id="picker-title"></h2></div>
+            <p id="picker-description"></p>
+          </div>
+          <div id="course-options" class="course-options"></div>
+        </section>
+      </div>
+
+      <article id="question-page" class="question-page hidden" aria-live="polite">
+        <header class="question-header">
+          <div><p id="question-level" class="eyebrow"></p><h2 id="question-topic"></h2></div>
+          <div class="page-timer"><span id="page-target">Target: 30 min</span><strong id="page-time">00:00</strong></div>
+        </header>
+        <p class="page-instruction">Complete the five scored questions before submitting. After the first submission, correct answers will lock and hints will appear beside questions that need revision. Any <strong>Concept discussion</strong> at the end is oral practice and is not scored. Open <strong>Detailed solution</strong> for the prepared offline working, or use <strong>Ask GPT</strong> for a targeted hint or an alternative explanation.</p>
+        <section id="page-knowledge" class="page-knowledge hidden"></section>
+        <form id="answer-form">
+          <div id="question-list" class="question-list"></div>
+          <section id="concept-discussion" class="concept-discussion hidden"></section>
+          <div class="page-submit-bar"><span id="page-progress">First attempt</span><button id="page-submit" class="primary-button" type="submit">Submit page</button></div>
+        </form>
+      </article>
+
+      <section id="set-result" class="panel narrow-panel hidden" aria-live="polite"></section>
+    </section>
+
+    <section id="instructor-view" class="view">
+      <div class="panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">COURSE RECORD</p><h2>Progress and branching</h2></div>
+          <button id="refresh-results" class="secondary-button" type="button">Refresh results</button>
+        </div>
+        <p id="teacher-message" class="muted">Learning results load automatically on this local course website.</p>
+        <div class="table-scroll"><table id="progress-table" class="hidden"><thead><tr><th>Topic</th><th>Course page</th><th>Level</th><th>Result</th><th>Last activity</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Runs locally on this computer. Answers remain in the local course database.</footer>
+  <script src="/concept-map.js?v=20261102-layers" defer></script>
+  <script src="/app.js?v=20261102-layers" defer></script>
+<script src="/cloud.js"></script></body>
+</html>

@@ -1,0 +1,372 @@
+{
+  "revision": "2026-10-22-review-r7",
+  "source": "Teacher-authored diagnostic and illustrative review tasks. Not copied competition questions and not automatically recorded learner results.",
+  "maths_checks": [
+    {
+      "id": "M1",
+      "title": "Rearrange, convert and use scientific notation",
+      "given": "For an ideal gas, PV = nRT. Here P is absolute pressure, V is gas volume, n is gas amount, R is the molar gas constant and T is absolute temperature. P = 1.00 × 10⁵ Pa, V = 2.00 L, R = 8.314 J/(mol K), T = 300 K; 1 L = 10⁻³ m³.",
+      "find": "Find n in mol, to three significant figures.",
+      "fields": [
+        {
+          "name": "n",
+          "unit": "mol",
+          "answer": 0.08018603159329644,
+          "tolerance": 5e-05
+        }
+      ],
+      "steps": [
+        "Divide both sides of PV = nRT by RT: n = PV/(RT).",
+        "Convert the volume: 2.00 L = 2.00 × 10⁻³ m³. Then PV = (1.00 × 10⁵)(2.00 × 10⁻³) = 200 J.",
+        "RT = 8.314 × 300 = 2494.2 J/mol, so n = 200/2494.2 = 0.080186… mol ≈ 0.0802 mol."
+      ],
+      "check": "Pa m³ = J; J divided by J/mol gives mol. A result about 80 mol would reveal a litre-to-cubic-metre error.",
+      "repair": "Write the rearrangement before entering numbers. Convert litres once, then estimate 200/2500 ≈ 0.08.",
+      "where": "Gases; energy and amount calculations",
+      "model_mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>P</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></math>"
+    },
+    {
+      "id": "M2",
+      "title": "Quadratic roots and the physical condition",
+      "given": "A supplied model gives x² + 3x − 4 = 0. The variable x is dimensionless, and the physical condition is x > 0.",
+      "find": "Find the allowed value of x. Show both algebraic roots on paper and explain the choice.",
+      "fields": [
+        {
+          "name": "x",
+          "unit": "dimensionless",
+          "answer": 1,
+          "tolerance": 0.0001
+        }
+      ],
+      "steps": [
+        "Factor the polynomial: (x + 4)(x − 1) = 0.",
+        "Set each factor to zero: x = −4 or x = 1.",
+        "The stated condition x > 0 excludes −4. The allowed value is x = 1."
+      ],
+      "check": "Substitution gives 1 + 3 − 4 = 0. Negative roots are not automatically wrong: a negative velocity or coordinate can be physical in another problem.",
+      "repair": "Multiply the factors back out. Use the condition in this question to select a root; do not discard negative numbers by habit.",
+      "where": "Mechanics; coupled constraints",
+      "model_mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn></math>"
+    },
+    {
+      "id": "M3",
+      "title": "Logarithms and powers of ten",
+      "given": "For this supplied concentration model, pH = −log₁₀c. Here c is the numerical hydrogen-ion concentration when expressed in mol/L, so c is a dimensionless number in the logarithm. The concentration is 2.00 × 10⁻⁴ mol/L; use c = 0.000200.",
+      "find": "Find pH to three decimal places. A scientific calculator is allowed.",
+      "fields": [
+        {
+          "name": "pH",
+          "unit": "dimensionless",
+          "answer": 3.6989700043360187,
+          "tolerance": 0.0006
+        }
+      ],
+      "steps": [
+        "Use log₁₀(2 × 10⁻⁴) = log₁₀2 + log₁₀(10⁻⁴) = log₁₀2 − 4.",
+        "Apply the leading minus sign: pH = 4 − log₁₀2.",
+        "With log₁₀2 ≈ 0.301030, pH ≈ 3.698970 = 3.699."
+      ],
+      "check": "The concentration lies between 10⁻⁴ and 10⁻³ mol/L, so pH lies between 4 and 3.",
+      "repair": "Write the power of ten separately and keep the leading minus sign outside the logarithm.",
+      "where": "Acids and rates; logarithmic scales",
+      "model_mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mtext>pH</mtext><mo>=</mo><mo>−</mo><msub><mi>log</mi><mn>10</mn></msub><mi>c</mi></math>"
+    },
+    {
+      "id": "M4",
+      "title": "Resolve a vector using the stated angle",
+      "given": "A force of magnitude F = 10.0 N acts at θ = 30° above the positive horizontal direction. The required component is horizontal; the angle is measured from the horizontal, not from the vertical.",
+      "find": "Find the horizontal force component Fₓ in N, to three significant figures. A calculator in degree mode is allowed.",
+      "fields": [
+        {
+          "name": "Fₓ",
+          "unit": "N",
+          "answer": 8.660254037844387,
+          "tolerance": 0.01
+        }
+      ],
+      "steps": [
+        "Draw the force as the hypotenuse of a right triangle. The horizontal component is adjacent to θ.",
+        "Use cosθ = Fₓ/F, so Fₓ = F cosθ.",
+        "Fₓ = 10.0 cos30° = 8.660… N ≈ 8.66 N."
+      ],
+      "check": "The component is positive and smaller than 10.0 N. At θ = 0°, the same relation gives the full horizontal force.",
+      "repair": "Mark the given angle on a sketch; identify adjacent and opposite before choosing sine or cosine.",
+      "where": "Mechanics; ray and path geometry"
+    },
+    {
+      "id": "M5",
+      "title": "Gradient, axis order and units",
+      "given": "A straight-line graph plots pressure P vertically against depth h horizontally. Two points are (h = 0.10 m, P = 2.00 kPa) and (h = 0.40 m, P = 5.00 kPa). Use 1 kPa = 1000 Pa.",
+      "find": "Find the graph gradient ΔP/Δh in Pa/m.",
+      "fields": [
+        {
+          "name": "ΔP/Δh",
+          "unit": "Pa/m",
+          "answer": 10000,
+          "tolerance": 1
+        }
+      ],
+      "steps": [
+        "Use vertical change divided by horizontal change: gradient = (P₂ − P₁)/(h₂ − h₁).",
+        "ΔP = 3.00 kPa = 3000 Pa and Δh = 0.30 m.",
+        "The gradient is 3000/0.30 = 10000 Pa/m = 1.00 × 10⁴ Pa/m."
+      ],
+      "check": "The slope is positive. P/h for either individual point includes the non-zero intercept and is not this gradient.",
+      "repair": "Read the axes first. Subtract both coordinates, convert kPa to Pa, then divide.",
+      "where": "Graphs in every topic; calibration and fluids"
+    },
+    {
+      "id": "M6",
+      "title": "Exponential change and a dimensionless time ratio",
+      "given": "A supplied decay model is N = N₀ × 2^(−t/t½). N₀ is the initial number of undecayed objects, N the number remaining, t the elapsed time and t½ the half-life. Both times must use the same unit. Here t = 1.5t½.",
+      "find": "Find the fraction N/N₀ remaining, to three decimal places. A scientific calculator is allowed.",
+      "fields": [
+        {
+          "name": "N/N₀",
+          "unit": "dimensionless",
+          "answer": 0.3535533905932738,
+          "tolerance": 0.0006
+        }
+      ],
+      "steps": [
+        "Divide by N₀: N/N₀ = 2^(−t/t½).",
+        "The time ratio is t/t½ = 1.5, so N/N₀ = 2^(−1.5).",
+        "2^(−1.5) = 1/(2√2) ≈ 0.353553 = 0.354."
+      ],
+      "check": "After one half-life the fraction is 0.5; after two it is 0.25. The answer lies between them.",
+      "repair": "Make the exponent dimensionless. A negative exponent means a reciprocal, not a negative population.",
+      "where": "Atoms; repeated proportional change",
+      "model_mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>N</mi><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mfrac><mi>t</mi><msub><mi>t</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></mfrac></mrow></msup></math>"
+    },
+    {
+      "id": "M7",
+      "title": "Use two independent equations",
+      "given": "Two independent measurements give 2x + y = 11 and x + 3y = 13. The unknown parameters x and y are dimensionless.",
+      "find": "Find both x and y. Substitute into both original equations as a check.",
+      "fields": [
+        {
+          "name": "x",
+          "unit": "dimensionless",
+          "answer": 4,
+          "tolerance": 0.0001
+        },
+        {
+          "name": "y",
+          "unit": "dimensionless",
+          "answer": 3,
+          "tolerance": 0.0001
+        }
+      ],
+      "steps": [
+        "From the first equation, y = 11 − 2x.",
+        "Substitute into the second: x + 3(11 − 2x) = 13, so −5x = −20 and x = 4.",
+        "Then y = 11 − 2(4) = 3."
+      ],
+      "check": "2(4) + 3 = 11 and 4 + 3(3) = 13. Both observations must be satisfied; one equation alone cannot determine both unknowns.",
+      "repair": "Eliminate one unknown or substitute one expression. Keep the two original equations for the final check.",
+      "where": "Circuits; gas apparatus; mixture and measurement inference",
+      "model_mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mtable><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>11</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>13</mn></mtd></mtr></mtable></math>"
+    }
+  ],
+  "retention_examples": [
+    {
+      "id": "D1",
+      "topic": "Gases",
+      "basis": "After Gases Core 1/2: sealed ideal gas, absolute scales, two states.",
+      "change": "Infer an unknown atmospheric pressure from two states, rather than predict a state using a supplied atmosphere.",
+      "given": "A sealed ideal-gas sample has V₁ = 2.00 L, T₁ = 300 K and gauge pressure p₁ = 50.0 kPa. After compression and heating, V₂ = 1.50 L, T₂ = 330 K and gauge pressure p₂ = 120.0 kPa. Both readings use the same constant atmospheric pressure pₐ, which is unknown. No gas escapes. Both states are at equilibrium. Gauge pressure means gas pressure minus atmospheric pressure; all pressures use kPa.",
+      "find": "Determine pₐ in kPa. Explain on paper which quantities are fixed and how gauge readings enter the model.",
+      "answer": 100,
+      "unit": "kPa",
+      "hint": "Name the fixed gas amount and convert each gauge reading symbolically to absolute pressure before comparing the states.",
+      "steps": [
+        "The gas amount n is unchanged. For two equilibrium states of the same ideal gas, P₁V₁/T₁ = P₂V₂/T₂, where P is absolute pressure.",
+        "Write P₁ = pₐ + 50.0 and P₂ = pₐ + 120.0. Then 2.00(pₐ + 50.0)/300 = 1.50(pₐ + 120.0)/330.",
+        "Cross-multiply and divide by 300: 2.20(pₐ + 50.0) = 1.50(pₐ + 120.0). Thus 0.70pₐ = 70.0, giving pₐ = 100 kPa."
+      ],
+      "check": "P₁ = 150 kPa and P₂ = 220 kPa. Both PV/T values equal 1.00 kPa L/K. Gauge pressure alone would give unequal values.",
+      "listen": "The learner explains that n is fixed, temperature is in kelvin, and each pressure must include the same atmospheric offset."
+    },
+    {
+      "id": "D2",
+      "topic": "Heat",
+      "basis": "After Heat phase-change/calorimetry teaching: latent heat, sensible heating and energy boundaries.",
+      "change": "Establish the initial equilibrium phase, then infer energy for a specified later state.",
+      "given": "Mix 0.200 kg of ice at 0°C with 0.300 kg of water at 30.0°C in an insulated container. Its heat capacity is negligible. The mixture first reaches equilibrium with no external heat. A heater then transfers thermal energy to the mixture until all material is liquid water at 10.0°C. There is no heat loss or evaporation. Use water specific heat c = 4200 J/(kg K) and ice latent heat of fusion L = 334000 J/kg. The symbols c and L mean energy per kg per kelvin of temperature rise, and energy per kg melted, respectively.",
+      "find": "Determine whether ice remains after the first mixing stage. Then find the thermal energy the heater must transfer, in kJ. This asks for energy reaching the mixture, not electrical input energy.",
+      "answer": 50,
+      "unit": "kJ",
+      "hint": "Compare the warm water’s available cooling energy with the energy needed to melt all the ice. Keep the heater stage as a separate energy account.",
+      "steps": [
+        "Cooling the initial warm water to 0°C releases 0.300 × 4200 × 30.0 = 37800 J. Melting all the ice requires 0.200 × 334000 = 66800 J. Since 37800 < 66800, the first equilibrium is at 0°C with ice remaining.",
+        "The melted ice mass is 37800/334000 = 0.11317… kg, leaving 0.08683… kg. Its remaining melting energy is 66800 − 37800 = 29000 J.",
+        "Once the remaining ice melts, 0.500 kg of water must warm from 0°C to 10.0°C. This needs 0.500 × 4200 × 10.0 = 21000 J. The heater must transfer 29000 + 21000 = 50000 J = 50.0 kJ."
+      ],
+      "check": "A single start-to-finish account gives 0.200L + 0.500c(10.0) − 0.300c(30.0) = 50000 J. No ice remains in the specified final state.",
+      "listen": "The learner tests the phase before assuming a liquid-only equilibrium and distinguishes useful transferred heat from electrical input."
+    },
+    {
+      "id": "D3",
+      "topic": "Waves",
+      "basis": "After Waves echo/calibration teaching: round-trip distance and a constant measurement delay.",
+      "change": "Infer distance from two calibration observations when speed and instrument delay are not supplied.",
+      "given": "An echo apparatus measures time from its electronic trigger to the detected return. It adds the same unknown fixed delay τ to every reading; τ is an instrument delay, not sound travel time. In the same stationary, uniform air, a plane reflector 12.0 m away gives 75.0 ms and one 24.0 m away gives 145.0 ms. A third reflector gives 110.0 ms. Each sound path goes straight to its reflector and returns to the apparatus. Sound speed v is constant but unknown. Use 1000 ms = 1 s; treat the stated values as exact teaching data.",
+      "find": "Find the distance to the third reflector, in m. State the relation between measured time, round-trip travel and the fixed delay.",
+      "answer": 18,
+      "unit": "m",
+      "hint": "Subtract the two calibration readings so the common delay cancels. Each extra metre of reflector distance adds two metres of sound travel.",
+      "steps": [
+        "For reflector distance d, measured time is t = τ + 2d/v. Here t and τ are in seconds, d in metres and v in m/s.",
+        "Subtract the two calibration equations: 0.145 − 0.075 = 2(24.0 − 12.0)/v. Thus v = 24.0/0.070 = 342.857… m/s.",
+        "Use the first reading: τ = 0.075 − 2(12.0)/342.857… = 0.005 s. For the third reading, d = v(0.110 − 0.005)/2 = 18.0 m."
+      ],
+      "check": "110 ms is halfway between 75 and 145 ms. With constant speed and a constant delay, distance must be halfway between 12 and 24 m. Linear interpolation is an equally valid solution.",
+      "listen": "The learner includes the round trip and removes the common intercept; they can explain the interpolation check without memorising the final number."
+    }
+  ],
+  "topic_review": [
+    {
+      "topic_id": "mechanics-review",
+      "topic": "Mechanics",
+      "prompt": "For the chosen collision, what system makes momentum conservation a useful model? Is kinetic energy also conserved?",
+      "listen": "Negligible net external impulse for the selected system; kinetic energy can change in an inelastic collision.",
+      "change": "Change an elastic contact to sticking, or ask for an unknown mass from measured before/after velocities. State the new interaction explicitly.",
+      "core_pages": [
+        "Core 1: Motion, force and energy models",
+        "Core 2: Momentum, orbit and rotation constraints"
+      ]
+    },
+    {
+      "topic_id": "topic-08",
+      "topic": "Gases",
+      "prompt": "Which gas-state quantities are fixed here, and why do the pressure and temperature scales matter?",
+      "listen": "Sealed amount when stated; absolute pressure and kelvin; select the relation using the actual volume/temperature constraints.",
+      "change": "Make an atmospheric offset or gas amount the unknown, using independent observations; do not add a new chemical process.",
+      "core_pages": [
+        "Core 1: Select constraints and compare states",
+        "Core 2: Infer amounts and apparatus errors"
+      ]
+    },
+    {
+      "topic_id": "topic-09",
+      "topic": "Heat",
+      "prompt": "How do you decide which phases remain before choosing an equilibrium-temperature calculation?",
+      "listen": "Compare available sensible energy with required latent energy and define the energy boundary.",
+      "change": "Specify a final phase/temperature and infer required energy, or infer heat loss from a separate observation.",
+      "core_pages": [
+        "Core 1: Energy boundaries and measured graphs",
+        "Core 2: Radiation and experimental evidence"
+      ]
+    },
+    {
+      "topic_id": "topic-10",
+      "topic": "Waves",
+      "prompt": "An echo reading includes a constant trigger delay. How can two measurements separate that delay from propagation?",
+      "listen": "Round-trip distance; subtract observations or use the gradient and intercept of a distance-time relation.",
+      "change": "Use two calibration observations, then infer an unknown distance or speed; change the representation to a graph.",
+      "core_pages": [
+        "Core 1: Propagation and path evidence",
+        "Core 2: Modes, scaling and measured response"
+      ]
+    },
+    {
+      "topic_id": "topic-11",
+      "topic": "Light",
+      "prompt": "When a ray enters a stationary transparent medium, which of frequency, speed and wavelength may change?",
+      "listen": "Frequency remains fixed by the source at the stationary boundary; speed and wavelength can change.",
+      "change": "Give two ray or photon observations and infer a material or detector parameter, stating every needed measurement.",
+      "core_pages": [
+        "Core 1: Construct and interpret ray paths",
+        "Core 2: Layered paths and optical power"
+      ]
+    },
+    {
+      "topic_id": "topic-12",
+      "topic": "Circuits",
+      "prompt": "Why is a voltmeter connected across a component, and what approximation is made about its resistance?",
+      "listen": "It measures the potential difference between two nodes; a high-resistance meter draws negligible current in the ideal approximation.",
+      "change": "Replace a direct component calculation with inference from two loaded measurements; state the meter model if it matters.",
+      "core_pages": [
+        "Core 1: Current paths and energy per charge",
+        "Core 2: Sources, sensors and measured power"
+      ]
+    },
+    {
+      "topic_id": "topic-13",
+      "topic": "Atoms",
+      "prompt": "How does forming an ion differ from changing the isotope of an element?",
+      "listen": "Ion formation changes electron number; isotope change changes neutron number; proton number identifies the element.",
+      "change": "Infer a population or mixture from an independent count and a mass/charge observation rather than repeat a known isotope average.",
+      "core_pages": [
+        "Core 1: Particles, isotopes and separation accounts",
+        "Core 2: Formula units and measured properties"
+      ]
+    },
+    {
+      "topic_id": "topic-14",
+      "topic": "Reactions",
+      "prompt": "An open reaction vessel loses measured mass. Does that by itself contradict conservation of mass?",
+      "listen": "Track material crossing the chosen boundary; include escaped gas before making a total-mass claim.",
+      "change": "Change the collected stream or the system boundary and ask for an unknown loss or reactant amount; state what is retained.",
+      "core_pages": [
+        "Core 1: Select reactants and track process streams",
+        "Core 2: Correct measurements and define the system"
+      ]
+    },
+    {
+      "topic_id": "topic-15",
+      "topic": "Acids & rates",
+      "prompt": "What does a one-unit change of pH mean for the concentration in the supplied logarithmic model?",
+      "listen": "A factor of ten, with the opposite direction for pH and numerical hydrogen-ion concentration.",
+      "change": "Infer a dilution or concentration factor from pH change, or infer rate from a changed graph segment; keep the chemical model explicit.",
+      "core_pages": [
+        "Core 1: Acid amounts, dilution and measurement",
+        "Core 2: Rates and evidence from curves"
+      ]
+    },
+    {
+      "topic_id": "topic-07-review",
+      "topic": "Diagnostics",
+      "prompt": "How do pressure, contact area and resultant force differ in this situation?",
+      "listen": "Pressure is force per area; the resultant depends on the specified pressure difference and effective area.",
+      "change": "Change the submerged/contact area or infer a density from two force observations; redraw the system and forces.",
+      "core_pages": [
+        "Core 1: Fluid and force accounts",
+        "Core 2: Models from algebra and graph data"
+      ]
+    },
+    {
+      "topic_id": "term-01-review",
+      "topic": "Integration",
+      "prompt": "Which independent observation determines the remaining unknown, and which conservation law closes the model?",
+      "listen": "Identify a real second constraint rather than counting the same equation twice; state the chosen system.",
+      "change": "Keep the taught physical models but change the unknown or which quantity is measured; require a check from the second observation.",
+      "core_pages": [
+        "Core 1: Connect physical quantities across topics",
+        "Core 2: Conservation and independent measurements"
+      ]
+    },
+    {
+      "topic_id": "biology-foundations",
+      "topic": "Biology",
+      "prompt": "Would the observed treatment difference establish a cause if the control group also changed in another way?",
+      "listen": "A confounding change prevents isolating the proposed cause; name the variable needing control.",
+      "change": "Use a new data table or intervention and ask for an inferred rate or prediction; define controls and any supplied biological relationship.",
+      "core_pages": [
+        "Core 1: Biology",
+        "Core 2: Biology"
+      ]
+    },
+    {
+      "topic_id": "earth-environment",
+      "topic": "Earth & space",
+      "prompt": "Can incoming and outgoing energy be unequal while a reservoir is warming?",
+      "listen": "Yes; their difference changes stored energy. Equality is the equilibrium condition, not a universal assumption.",
+      "change": "Change a reservoir size, flux or observation interval and infer storage change; specify geometry/area and units when needed.",
+      "core_pages": [
+        "Core 1: Earth & space",
+        "Core 2: Earth & space"
+      ]
+    }
+  ]
+}

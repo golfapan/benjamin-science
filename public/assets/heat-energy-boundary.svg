@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="310" viewBox="0 0 560 310" role="img" aria-labelledby="title desc">
+<title id="title">Choose the thermal system boundary</title><desc id="desc">Electrical input crosses into a boundary containing a sample, heater and thermometer. Stored internal energy can increase. A separate arrow takes loss energy to the room.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#197d74"/></marker></defs>
+<rect width="560" height="310" rx="15" fill="#f8fbfa"/>
+<rect x="155" y="64" width="250" height="188" rx="18" fill="#e5f2ee" stroke="#197d74" stroke-width="2" stroke-dasharray="8 6"/>
+<g font-family="Arial,sans-serif" font-size="20" fill="#183e59" text-anchor="middle">
+<text x="280" y="37" font-weight="bold">Choose what is inside</text>
+<text x="280" y="104">Sample + apparatus</text><text x="280" y="151">Internal energy U</text>
+<text x="280" y="186">can increase</text><text x="280" y="285">Dashed line = system boundary</text>
+<text x="76" y="105">Electrical</text><text x="76" y="130">input</text>
+<text x="481" y="189">Loss to</text><text x="481" y="214">the room</text></g>
+<g stroke="#197d74" stroke-width="4" marker-end="url(#arrow)"><path d="M25 157H150"/><path d="M405 150H530"/></g>
+</svg>

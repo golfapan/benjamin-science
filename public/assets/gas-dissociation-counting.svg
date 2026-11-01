@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">A molecule can split while all atoms remain</title>
+  <desc id="desc">Five pairs of atoms are initially five molecules. One pair splits. The final state has four molecules and two separate atoms, a total of six gas particles. Ten atoms remain.</desc>
+  <rect width="520" height="360" rx="16" fill="#f8fbfa"/>
+  <g font-family="Arial, sans-serif" fill="#183e59" font-size="22">
+    <text x="26" y="38" font-weight="bold">Before: 5 molecules</text>
+    <text x="26" y="212" font-weight="bold">After: 4 molecules + 2 atoms</text>
+    <text x="26" y="153" font-size="20">One molecule splits: A₂ → 2A</text>
+    <text x="26" y="326" font-size="20">10 atoms in both states</text>
+  </g>
+  <g stroke="#197d74" stroke-width="5">
+    <path d="M48 83h24 M144 83h24 M240 83h24 M336 83h24 M432 83h24"/>
+    <path d="M48 257h24 M144 257h24 M240 257h24 M336 257h24"/>
+  </g>
+  <g fill="#197d74" stroke="#ffffff" stroke-width="2">
+    <circle cx="48" cy="83" r="15"/><circle cx="72" cy="83" r="15"/>
+    <circle cx="144" cy="83" r="15"/><circle cx="168" cy="83" r="15"/>
+    <circle cx="240" cy="83" r="15"/><circle cx="264" cy="83" r="15"/>
+    <circle cx="336" cy="83" r="15"/><circle cx="360" cy="83" r="15"/>
+    <circle cx="432" cy="83" r="15"/><circle cx="456" cy="83" r="15"/>
+    <circle cx="48" cy="257" r="15"/><circle cx="72" cy="257" r="15"/>
+    <circle cx="144" cy="257" r="15"/><circle cx="168" cy="257" r="15"/>
+    <circle cx="240" cy="257" r="15"/><circle cx="264" cy="257" r="15"/>
+    <circle cx="336" cy="257" r="15"/><circle cx="360" cy="257" r="15"/>
+  </g>
+  <g fill="#c47b35" stroke="#fff" stroke-width="2"><circle cx="426" cy="242" r="15"/><circle cx="470" cy="272" r="15"/></g>
+</svg>

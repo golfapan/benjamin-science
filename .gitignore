@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+.env*
+.dev.vars*
+*.sqlite*
+Data/
+temp/
+*.log
+__pycache__/

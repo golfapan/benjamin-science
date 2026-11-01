@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="530" viewBox="0 0 560 530" role="img" aria-labelledby="title desc">
+<title id="title">A sphere intercepts a disk and emits over its surface</title><desc id="desc">Parallel incoming light intercepts a sphere's projected disk of area pi r squared. Thermal radiation is emitted in all directions from the full spherical surface of area four pi r squared.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#c47b35"/></marker></defs>
+<rect width="560" height="530" rx="15" fill="#f8fbfa"/>
+<g font-family="Arial,sans-serif" fill="#183e59" font-size="21" text-anchor="middle"><text x="280" y="36" font-weight="bold">Intercepting parallel light</text><text x="280" y="246">Projected disk: πr²</text><text x="280" y="292" font-weight="bold">Emitting in all directions</text><text x="280" y="507">Full sphere surface: 4πr²</text></g>
+<circle cx="348" cy="137" r="76" fill="#dceeea" stroke="#197d74" stroke-width="3"/><ellipse cx="348" cy="137" rx="24" ry="76" fill="none" stroke="#197d74" stroke-dasharray="5 5"/>
+<g fill="none" stroke="#c47b35" stroke-width="3" marker-end="url(#arrow)"><path d="M45 87H268"/><path d="M45 137H268"/><path d="M45 187H268"/></g>
+<path d="M348 137H424" stroke="#183e59" stroke-width="2"/><text x="385" y="126" fill="#183e59" font-family="Arial,sans-serif" font-size="20">r</text>
+<circle cx="280" cy="391" r="62" fill="#dceeea" stroke="#197d74" stroke-width="3"/>
+<g fill="none" stroke="#c47b35" stroke-width="3" marker-end="url(#arrow)"><path d="M350 391H407"/><path d="M210 391H153"/><path d="M280 323V306"/><path d="M280 460V477"/><path d="M330 341L370 310"/><path d="M230 341L190 310"/><path d="M330 441L370 472"/><path d="M230 441L190 472"/></g>
+</svg>

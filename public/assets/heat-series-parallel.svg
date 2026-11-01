@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480" role="img" aria-labelledby="title desc">
+<title id="title">Series and parallel heat paths</title><desc id="desc">Two series layers lie along one heat path between hot and cold boundaries. In parallel a wall and bridge each connect the same hot and cold boundaries.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#197d74"/></marker></defs>
+<rect width="560" height="480" rx="15" fill="#f8fbfa"/>
+<g font-family="Arial,sans-serif" fill="#183e59" text-anchor="middle" font-size="20">
+<text x="280" y="35" font-weight="bold">Series: one heat path</text>
+<text x="65" y="82">Hot</text><text x="495" y="82">Cold</text>
+<text x="280" y="200">One common steady power</text>
+<text x="280" y="251" font-weight="bold">Parallel: separate paths</text>
+<text x="65" y="307">Hot</text><text x="495" y="307">Cold</text>
+<text x="280" y="456">Same boundary temperature difference</text>
+</g>
+<g fill="#e2efed" stroke="#197d74" stroke-width="2"><rect x="150" y="92" width="120" height="56" rx="8"/><rect x="292" y="92" width="120" height="56" rx="8"/><rect x="190" y="289" width="182" height="52" rx="8"/><rect x="190" y="365" width="182" height="52" rx="8"/></g>
+<g font-family="Arial,sans-serif" fill="#183e59" text-anchor="middle" font-size="20"><text x="210" y="128">R₁</text><text x="352" y="128">R₂</text><text x="281" y="322">Wall</text><text x="281" y="398">Bridge</text></g>
+<g fill="none" stroke="#197d74" stroke-width="3"><g marker-end="url(#arrow)"><path d="M65 120H143"/><path d="M270 120H287"/><path d="M412 120H495"/><path d="M90 315H185"/><path d="M372 315H470"/><path d="M90 390H185"/><path d="M372 390H470"/></g><path d="M90 277V428 M470 277V428" stroke="#183e59"/></g>
+</svg>

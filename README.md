@@ -1,22 +1,17 @@
-# Benjamin
+# Benjamin — private online course
 
-Private course migration workspace. Not a live learning website.
+Cloudflare Workers serves the course; D1 saves online attempts. The original Mac course and its learning database remain unchanged. Earlier Mac work has not been imported.
 
-## Current status — 2 November 2026
+Google sign-in protects every production request. No Cloudflare Zero Trust subscription or billing card is required. Only golfapan@gmail.com (teacher) and benjaminpanics@gmail.com (learner) are allowed. The Worker verifies Google token signatures, issuer, client audience, expiry, email verification and a single-use browser nonce. An HttpOnly secure cookie refers to a hashed, seven-day session in D1; client identity headers are ignored. Static files and exam PDFs also require authentication. Original exam answer PDFs require the teacher role. Preview URLs are disabled.
 
-- Private GitHub repository created.
-- Current course-source migration candidate prepared locally, excluding student records.
-- Source files have not yet been uploaded to this repository.
-- No website, authentication gate or cloud progress database has been deployed.
+## Deployment
 
-## Proposed configuration
+Set the D1 database ID in wrangler.jsonc. Apply schema.sql to the new benjamin-progress database. Set GOOGLE_CLIENT_ID to the web login client with the exact production origin. The server enforces the two-email allowlist before creating a session. Keep run_worker_first enabled. Deploy with npm install and npm run deploy. No private Mac database, credentials, logs, reference library or developer history belongs in this repository.
 
-Use GitHub for private source/version history and Cloudflare Workers + D1 + Access for the online course. Workers supplies a workers.dev address, so no purchased domain is required. Access should use emailed one-time PINs for the two family addresses approved by Stephen; do not enable public sign-up or domain-wide access. Keep teacher and learner permissions separate.
+## Validation
 
-The existing course is Python/SQLite on the Mac. It needs a checked cloud backend adaptation before deployment; uploading HTML alone would break grading, corrections and progress evidence. Preserve question identities and separate first submissions, corrections and help use. The local database remains the current learning-record authority until an explicit, verified cutover.
+Run npm test. Golden fixtures are generated from the original Python grading and summary implementation using synthetic, in-memory records. Tests cover corrections, help evidence, first-test sealing, SQL persistence, concurrent update rejection, ownership and access guards.
 
-Do not upload Data, live SQLite files, answers/progress history, credentials, certificates, original reserved exam PDFs, caches or recovery archives. The question bank contains solutions and must stay server-side. Static resources and API routes both require authenticated access.
+build.py is a local snapshot preparation utility; it requires the original course directories and is not a Cloudflare build step. The deployed snapshot contains only the selected current course resources. Course material and solutions are bundled in the Worker, outside the static directory.
 
-## Next step
-
-Review this configuration, create/connect the Cloudflare account, prepare and test the cloud adapter, then verify sign-in, denied anonymous access, learner/teacher roles and durable progress before issuing a learning URL. Start within free-tier limits; do not enable paid services without Stephen's approval.
+Deployment status is recorded in the local cloud_plan.json. Repository creation alone does not mean hosting or email login is live.

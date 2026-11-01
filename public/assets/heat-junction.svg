@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="330" viewBox="0 0 560 330" role="img" aria-labelledby="title desc">
+<title id="title">Two reservoir paths and a junction heater</title><desc id="desc">A hot reservoir at 100 degrees Celsius connects through R hot to an unknown-temperature junction. The junction connects through R cold to a 20 degree Celsius reservoir. A separate heater sends power into the junction.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#197d74"/></marker></defs>
+<rect width="560" height="330" rx="15" fill="#f8fbfa"/>
+<g font-family="Arial,sans-serif" fill="#183e59" text-anchor="middle" font-size="20"><text x="80" y="62">Hot reservoir</text><text x="80" y="91">100 °C</text><text x="480" y="62">Cold reservoir</text><text x="480" y="91">20 °C</text><text x="280" y="62">Junction</text><text x="280" y="91">T changes</text></g>
+<rect x="120" y="128" width="105" height="57" rx="8" fill="#e2efed" stroke="#197d74" stroke-width="2"/><rect x="335" y="128" width="105" height="57" rx="8" fill="#e2efed" stroke="#197d74" stroke-width="2"/><circle cx="280" cy="156" r="18" fill="#c47b35"/>
+<g stroke="#197d74" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M30 156H115"/><path d="M225 156H259"/><path d="M300 156H330"/><path d="M440 156H530"/><path d="M280 251V182"/></g>
+<g font-family="Arial,sans-serif" fill="#183e59" text-anchor="middle" font-size="20"><text x="172" y="164">R<tspan baseline-shift="sub" font-size="14">hot</tspan></text><text x="388" y="164">R<tspan baseline-shift="sub" font-size="14">cold</tspan></text><text x="280" y="279">Separate heater input</text><text x="280" y="309">No storage change at steady state</text></g>
+</svg>
