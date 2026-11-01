@@ -18,4 +18,8 @@ Deployment status is recorded in the local cloud_plan.json. Repository creation 
 
 ## Current rollout
 
-Worker deployment is configured at https://benjamin-science.golfapan.workers.dev. Anonymous requests are blocked. Google login setup is pending user acceptance of Google’s API user-data policy and creation of the web login client. The course is not yet ready for learner use. Cloudflare Zero Trust checkout was cancelled; no credit card was bound. The two approved Gmail addresses remain the only permitted users.
+Course URL: https://benjamin-science.golfapan.workers.dev
+
+The private Worker and D1 schema are deployed. Google user-data policy consent, the exact production JavaScript origin and the two approved Google test users are configured. No credit card was bound and Cloudflare Zero Trust checkout was cancelled. A sign-out control is available for switching accounts.
+
+Live sign-in verification is incomplete: Google Identity Services currently reports that the origin is not allowed, despite the saved origin matching the course URL. Google documents a propagation interval of five minutes to several hours for client changes (https://support.google.com/cloud/answer/15549257). Propagation is a possible cause, not yet confirmed. Anonymous course/API access remains blocked. Do not treat the course as ready for learner use until an approved Google login and live progress round-trip have passed. Earlier Mac records remain separate and have not been imported.
